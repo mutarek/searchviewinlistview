@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'datas/dumdata.dart';
+import 'datas/vegetables.dart';
 
 class ThirdPage extends StatelessWidget {
   @override
@@ -15,7 +16,7 @@ class ThirdPage extends StatelessWidget {
               width: double.infinity,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemCount: dummyUsers.length,
+                itemCount: vegetables.length,
                 itemBuilder: (contezt, index) {
                   return Card(
                     elevation: 5,
@@ -30,7 +31,7 @@ class ThirdPage extends StatelessWidget {
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                   child: Image.network(
-                                    "https://freepngimg.com/thumb/tomato/6-tomato-png-image.png",
+                                    vegetables[index]['picture'],
                                     fit: BoxFit.cover,
                                     width: 150,
                                   ))),
@@ -38,7 +39,7 @@ class ThirdPage extends StatelessWidget {
                             flex: 2,
                             child: Center(
                               child: Text(
-                                'Vegetable',
+                                vegetables[index]['name'],
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                             ),
