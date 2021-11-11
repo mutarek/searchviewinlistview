@@ -94,18 +94,14 @@ class ThirdPage extends StatelessWidget {
                       child: Column(
                         children: [
                           Expanded(
-                              flex: 3,
-                              child: Stack(
-                                children: [
-                                  ClipRRect(
-                                      borderRadius: BorderRadius.circular(10),
-                                      child: Image.network(
-                                        GroceryCollection[index]['picture'],
-                                        fit: BoxFit.cover,
-                                        width: 150,
-                                      )),
-                                ],
-                              )),
+                              flex: 4,
+                              child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(10),
+                                  child: Image.network(
+                                    GroceryCollection[index]['picture'],
+                                    fit: BoxFit.cover,
+                                    width: 150,
+                                  ))),
                           Expanded(
                             flex: 2,
                             child: Center(
