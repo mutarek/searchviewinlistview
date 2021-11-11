@@ -4,7 +4,38 @@ import 'package:flutter/material.dart';
 class ThirdPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: 200,
+              width: double.infinity,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    height: 150,
+                    width: 180.0,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Center(child: Text('Picture')),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Center(child: Text('Text')),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
