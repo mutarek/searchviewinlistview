@@ -17,6 +17,7 @@ class _State extends State<FirstPage> {
 
   @override
   void initState() {
+    allUsers.sort;
     copyUsers = allUsers;
     super.initState();
   }
