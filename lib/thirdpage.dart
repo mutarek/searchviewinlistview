@@ -23,7 +23,7 @@ class ThirdPage extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 200,
+              height: 400,
               width: double.infinity,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
