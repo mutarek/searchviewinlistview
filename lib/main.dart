@@ -4,8 +4,7 @@ import 'package:list/secondpage.dart';
 import 'datas/dumdata.dart';
 
 void main() {
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,home: FirstPage()));
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: FirstPage()));
 }
 
 class FirstPage extends StatefulWidget {
@@ -25,12 +24,10 @@ class _State extends State<FirstPage> {
   void searchData(String value) {
     List<Map<String, dynamic>> similarUsers = [];
     if (value.isEmpty) {
+      allUsers.sort;
       similarUsers = allUsers;
     } else {
-      similarUsers = allUsers
-          .where((name) =>
-              name['name'].toLowerCase().contains(value.toLowerCase()))
-          .toList();
+      similarUsers = allUsers.where((name) => name['name'].toLowerCase().contains(value.toLowerCase())).toList();
     }
     setState(() {
       copyUsers = similarUsers;
@@ -45,8 +42,7 @@ class _State extends State<FirstPage> {
           child: ListTile(
             title: Text('Second'),
             onTap: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => SecondPage()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondPage()));
             },
           ),
         ),
@@ -57,9 +53,7 @@ class _State extends State<FirstPage> {
             child: Column(
               children: [
                 TextField(
-                  decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      labelText: 'Search Student'),
+                  decoration: InputDecoration(border: OutlineInputBorder(), labelText: 'Search Student'),
                   onChanged: (value) => searchData(value),
                 ),
                 Container(
@@ -80,44 +74,26 @@ class _State extends State<FirstPage> {
                                         Expanded(
                                           flex: 2,
                                           child: Center(
-                                            child: CircleAvatar(
-                                                radius: 60,
-                                                backgroundColor: Colors.brown,
-                                                backgroundImage: NetworkImage(
-                                                    copyUsers[index]
-                                                        ['profile'])),
+                                            child: CircleAvatar(radius: 60, backgroundColor: Colors.brown, backgroundImage: NetworkImage(copyUsers[index]['profile'])),
                                           ),
                                         ),
                                         Expanded(
                                             flex: 3,
                                             child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
+                                              mainAxisAlignment: MainAxisAlignment.center,
+                                              crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
                                                 Center(
                                                   child: Text(
                                                     copyUsers[index]['name'],
-                                                    style: TextStyle(
-                                                        fontSize: 30,
-                                                        fontWeight:
-                                                            FontWeight.bold),
+                                                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                                                   ),
                                                 ),
                                                 Text(
                                                   copyUsers[index]['email'],
-                                                  style: TextStyle(
-                                                      fontSize: 15,
-                                                      fontWeight:
-                                                          FontWeight.bold),
+                                                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                                                 ),
-                                                CircleAvatar(
-                                                    backgroundColor:
-                                                        Colors.teal,
-                                                    radius: 20,
-                                                    child: Text(
-                                                        "${copyUsers[index]['position']}"))
+                                                CircleAvatar(backgroundColor: Colors.teal, radius: 20, child: Text("${copyUsers[index]['position']}"))
                                               ],
                                             ))
                                       ],
@@ -125,8 +101,7 @@ class _State extends State<FirstPage> {
                               );
                             },
                           )
-                        : Image.network(
-                            "https://pictures.dealer.com/a/alanjayautomotivenetwork/0193/dfdcaf5815f36d2398fb372b2f294a73x.jpg?impolicy=downsize&w=568"))
+                        : Image.network("https://pictures.dealer.com/a/alanjayautomotivenetwork/0193/dfdcaf5815f36d2398fb372b2f294a73x.jpg?impolicy=downsize&w=568"))
               ],
             ),
           ),
