@@ -21,7 +21,7 @@ class ThirdPage extends StatelessWidget {
                     elevation: 5,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                     child: Container(
-                      height: 150,
+                      height: 130,
                       width: 150,
                       child: Column(
                         children: [
