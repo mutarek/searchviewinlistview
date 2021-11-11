@@ -78,6 +78,16 @@ class ThirdPage extends StatelessWidget {
               ),
             ),
             Container(
+              margin: EdgeInsets.all(4),
+              padding: EdgeInsets.all(5),
+              height: 60,
+              width: double.infinity,
+              child: Text(
+                'Grocery Collection',
+                style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold, letterSpacing: 3),
+              ),
+            ),
+            Container(
               margin: EdgeInsets.all(10),
               height: 400,
               width: double.infinity,
