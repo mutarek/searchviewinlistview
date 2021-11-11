@@ -17,7 +17,7 @@ class _State extends State<FirstPage> {
 
   @override
   void initState() {
-    allUsers.sort;
+    allUsers.sort();
     copyUsers = allUsers;
     super.initState();
   }
@@ -25,7 +25,7 @@ class _State extends State<FirstPage> {
   void searchData(String value) {
     List<Map<String, dynamic>> similarUsers = [];
     if (value.isEmpty) {
-      allUsers.sort;
+      allUsers.sort();
       similarUsers = allUsers;
     } else {
       similarUsers = allUsers.where((name) => name['name'].toLowerCase().contains(value.toLowerCase())).toList();
