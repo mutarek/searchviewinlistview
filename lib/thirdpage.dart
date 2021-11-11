@@ -18,7 +18,7 @@ class ThirdPage extends StatelessWidget {
               width: double.infinity,
               child: Text(
                 'Take a look of our some fresh vegetables:',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               ),
             ),
             Container(
