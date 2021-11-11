@@ -30,7 +30,7 @@ class ThirdPage extends StatelessWidget {
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                   child: Image.network(
-                                    dummyUsers[index]['profile'],
+                                    "https://freepngimg.com/thumb/tomato/6-tomato-png-image.png",
                                     fit: BoxFit.cover,
                                     width: 150,
                                   ))),
