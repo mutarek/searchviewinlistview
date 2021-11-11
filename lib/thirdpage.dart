@@ -105,7 +105,7 @@ class ThirdPage extends StatelessWidget {
                                         fit: BoxFit.cover,
                                         width: 150,
                                       )),
-                                  Positioned(
+                                  //Positioned(
                                       top: 20,
                                       left: 1,
                                       child: Container(
