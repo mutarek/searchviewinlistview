@@ -21,7 +21,12 @@ class ThirdPage extends StatelessWidget {
                     elevation: 5,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                     child: Column(
-                      children: [],
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Image.network(dummyUsers[index]['profile']),
+                        )
+                      ],
                     ),
                   );
                 },
