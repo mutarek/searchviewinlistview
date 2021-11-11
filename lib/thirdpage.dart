@@ -83,7 +83,7 @@ class ThirdPage extends StatelessWidget {
               height: 400,
               width: double.infinity,
               child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                 itemCount: GroceryCollection.length,
                 itemBuilder: (contezt, index) {
                   return Card(
