@@ -44,7 +44,7 @@ class ThirdPage extends StatelessWidget {
                                       width: 10,
                                       color: Colors.white,
                                       child: Center(
-                                        child: Text("{$vegetables[index]['price']}"),
+                                        child: Text('40'),
                                     ),
                                   )
                                 ],
