@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'datas/dumdata.dart';
+
 class ThirdPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,49 +13,22 @@ class ThirdPage extends StatelessWidget {
             Container(
               height: 200,
               width: double.infinity,
-              child: ListView(
+              child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                children: [
-                  Card(
+                itemCount: dummyUsers.length,
+                itemBuilder: (contezt,index){
+                  return Card(
                     elevation: 5,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
-                    child: Container(
-                      margin: EdgeInsets.all(10),
-                      height: 150,
-                      width: 180.0,
-                      child: Column(
-                        children: [
-                          Expanded(
-                            flex: 3,
-                            child: Center(child: Text('Picture')),
-                          ),
-                          Expanded(
-                            flex: 2,
-                            child: Center(child: Text('Text')),
-                          ),
-                        ],
-                      ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius:  BorderRadius.circular(20.0)
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(10),
-                    height: 150,
-                    width: 180.0,
-                    color: Colors.amber,
                     child: Column(
                       children: [
-                        Expanded(
-                          flex: 3,
-                          child: Center(child: Text('Picture')),
-                        ),
-                        Expanded(
-                          flex: 2,
-                          child: Center(child: Text('Text')),
-                        ),
+
                       ],
                     ),
-                  ),
-                ],
+                  )
+                },
               ),
             )
           ],
