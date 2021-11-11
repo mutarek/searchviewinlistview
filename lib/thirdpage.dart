@@ -81,8 +81,8 @@ class ThirdPage extends StatelessWidget {
               margin: EdgeInsets.all(10),
               height: 200,
               width: double.infinity,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
+              child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
                 itemCount: vegetables.length,
                 itemBuilder: (contezt, index) {
                   return Card(
