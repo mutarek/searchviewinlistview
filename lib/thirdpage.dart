@@ -38,15 +38,15 @@ class ThirdPage extends StatelessWidget {
                                         width: 150,
                                       )),
                                   Positioned(
-                                    left: -1,
-                                    child: Container(
-                                      height: 10,
-                                      width: 10,
-                                      color: Colors.white,
-                                      child: Center(
-                                        child: Text('40'),
-                                    ),
-                                  )
+                                      left: -1,
+                                      child: Container(
+                                        height: 10,
+                                        width: 10,
+                                        color: Colors.white,
+                                        child: Center(
+                                          child: Text('40'),
+                                        ),
+                                      ))
                                 ],
                               )),
                           Expanded(
