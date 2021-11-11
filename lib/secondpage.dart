@@ -5,12 +5,17 @@ import 'package:list/thirdpage.dart';
 
 import 'homepage.dart';
 
-class SecondPage extends StatefulWidget{
-  _State createState()=> _State();
+class SecondPage extends StatefulWidget {
+  _State createState() => _State();
 }
-class _State extends State<SecondPage>{
+
+class _State extends State<SecondPage> {
   int selectedpage = 1; //initial value
-  final _pageOptions = [FirstPage(), ThirdPage(), FirstPage()];
+  final _pageOptions = [
+    FirstPage(),
+    ThirdPage(),
+    FirstPage()
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,9 +32,9 @@ class _State extends State<SecondPage>{
           Icon(Icons.account_balance, size: 40),
           Icon(Icons.compare_arrows, size: 30),
         ],
-        onTap: (index){
+        onTap: (index) {
           setState(() {
-            selectedpage = index;  // changing selected page as per bar index selected by the user
+            selectedpage = index; // changing selected page as per bar index selected by the user
           });
         },
       ),
