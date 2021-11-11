@@ -15,6 +15,7 @@ class ThirdPage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
+                    margin: EdgeInsets.all(10),
                     height: 150,
                     width: 180.0,
                     color: Colors.amber,
@@ -32,6 +33,7 @@ class ThirdPage extends StatelessWidget {
                     ),
                   ),
                   Container(
+                    margin: EdgeInsets.all(10),
                     height: 150,
                     width: 180.0,
                     color: Colors.amber,
