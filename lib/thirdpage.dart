@@ -30,7 +30,24 @@ class ThirdPage extends StatelessWidget {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Container(
+                    height: 150,
+                    width: 180.0,
+                    color: Colors.amber,
+                    child: Column(
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Center(child: Text('Picture')),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Center(child: Text('Text')),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             )
