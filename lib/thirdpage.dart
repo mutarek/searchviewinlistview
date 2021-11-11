@@ -28,13 +28,28 @@ class ThirdPage extends StatelessWidget {
                         children: [
                           Expanded(
                               flex: 3,
-                              child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(10),
-                                  child: Image.network(
-                                    vegetables[index]['picture'],
-                                    fit: BoxFit.cover,
-                                    width: 150,
-                                  ))),
+                              child: Stack(
+                                children: [
+                                  ClipRRect(
+                                      borderRadius: BorderRadius.circular(10),
+                                      child: Image.network(
+                                        vegetables[index]['picture'],
+                                        fit: BoxFit.cover,
+                                        width: 150,
+                                      )),
+                                  Positioned(
+                                    left: -1,
+                                    child: Container(
+                                      height: 10,
+                                      width: 10,
+                                      color: Colors.white,
+                                      child: Center(
+                                        child: Text(vegetables[index]['price'].toString),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              )),
                           Expanded(
                             flex: 2,
                             child: Center(
