@@ -25,7 +25,7 @@ class ThirdPage extends StatelessWidget {
                       width: 150,
                       child: Column(
                         children: [
-                          Expanded(flex: 3, child: ClipRRect(borderRadius: BorderRadius.circular(100), child: Image.network(dummyUsers[index]['profile']))),
+                          Expanded(flex: 3, child: ClipRRect(borderRadius: BorderRadius.circular(10), child: Image.network(dummyUsers[index]['profile']))),
                           Expanded(
                             flex: 2,
                             child: Center(
