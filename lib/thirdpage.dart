@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'datas/dumdata.dart';
+import 'datas/grocerycollection.dart';
 import 'datas/vegetables.dart';
 
 class ThirdPage extends StatelessWidget {
@@ -83,7 +84,7 @@ class ThirdPage extends StatelessWidget {
               width: double.infinity,
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
-                itemCount: vegetables.length,
+                itemCount: GroceryCollection.length,
                 itemBuilder: (contezt, index) {
                   return Card(
                     elevation: 5,
@@ -100,7 +101,7 @@ class ThirdPage extends StatelessWidget {
                                   ClipRRect(
                                       borderRadius: BorderRadius.circular(10),
                                       child: Image.network(
-                                        vegetables[index]['picture'],
+                                        GroceryCollection[index]['picture'],
                                         fit: BoxFit.cover,
                                         width: 150,
                                       )),
@@ -112,7 +113,7 @@ class ThirdPage extends StatelessWidget {
                                         width: 10,
                                         color: Colors.white,
                                         child: Center(
-                                          child: Text('40'),
+                                          child: Text(GroceryCollection[index]['name']),
                                         ),
                                       ))
                                 ],
