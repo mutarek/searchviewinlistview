@@ -38,7 +38,7 @@ class ThirdPage extends StatelessWidget {
                                         width: 150,
                                       )),
                                   Positioned(
-                                      left: -1,
+                                      left: 1,
                                       child: Container(
                                         height: 10,
                                         width: 10,
