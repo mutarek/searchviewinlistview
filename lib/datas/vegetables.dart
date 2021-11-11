@@ -2,7 +2,7 @@ List<dynamic> vegetables = [
   {
     'name': 'Tomato',
     'price': 100,
-    'picture': 'https://freepngimg.com/png/1532-tomato-png-image'
+    'picture': 'https://www.transparentpng.com/thumb/vegetable/fZslFj-vegetable-cabbage-transparent.png'
   },
   {
     'name': 'Broccoli',

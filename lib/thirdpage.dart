@@ -31,7 +31,7 @@ class ThirdPage extends StatelessWidget {
                               child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10),
                                   child: Image.network(
-                                    'https://www.transparentpng.com/thumb/vegetable/fZslFj-vegetable-cabbage-transparent.png',
+                                    vegetables[index]['picture'],
                                     fit: BoxFit.cover,
                                     width: 150,
                                   ))),
