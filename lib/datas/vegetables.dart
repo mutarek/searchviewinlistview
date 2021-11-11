@@ -32,6 +32,6 @@ List<dynamic> vegetables = [
   {
     'name': 'Cucumber',
     'price': 40,
-    'picture': 'https://freepngimg.com/png/2720-cucumber-png-image-picture-download'
+    'picture': 'https://www.transparentpng.com/thumb/vegetable/of4W7J-cucumber-vegetable-transparent-picture.png'
   },
 ];
