@@ -32,7 +32,7 @@ class ThirdPage extends StatelessWidget {
                                   child: Image.network(
                                     dummyUsers[index]['profile'],
                                     fit: BoxFit.cover,
-                                    width: 180,
+                                    width: 150,
                                   ))),
                           Expanded(
                             flex: 2,
