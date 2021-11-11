@@ -25,6 +25,15 @@ class ThirdPage extends StatelessWidget {
                         Expanded(
                           flex: 3,
                           child: Image.network(dummyUsers[index]['profile']),
+                        ),
+                        Expanded(
+                          flex: 2,
+                          child: Center(
+                            child: Text(
+                              'Vegetable',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                          ),
                         )
                       ],
                     ),
