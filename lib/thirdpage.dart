@@ -12,6 +12,11 @@ class ThirdPage extends StatelessWidget {
         child: Column(
           children: [
             Container(
+              height: 30,
+              width: double.infinity,
+              child: Text('Take a look of our some fresh vegetables:'),
+            ),
+            Container(
               margin: EdgeInsets.all(10),
               height: 200,
               width: double.infinity,
