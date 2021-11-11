@@ -16,18 +16,14 @@ class ThirdPage extends StatelessWidget {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: dummyUsers.length,
-                itemBuilder: (contezt,index){
+                itemBuilder: (contezt, index) {
                   return Card(
                     elevation: 5,
-                    shape: RoundedRectangleBorder(
-                      borderRadius:  BorderRadius.circular(20.0)
-                    ),
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
                     child: Column(
-                      children: [
-
-                      ],
+                      children: [],
                     ),
-                  )
+                  );
                 },
               ),
             )
