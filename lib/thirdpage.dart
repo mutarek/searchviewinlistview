@@ -23,7 +23,7 @@ class ThirdPage extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 400,
+              height: 200,
               width: double.infinity,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
@@ -79,10 +79,12 @@ class ThirdPage extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 200,
+              height: 400,
               width: double.infinity,
               child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 
+                ),
                 itemCount: vegetables.length,
                 itemBuilder: (contezt, index) {
                   return Card(
