@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'datas/dumdata.dart';
 import 'datas/grocerycollection.dart';
 import 'datas/vegetables.dart';
@@ -105,17 +104,6 @@ class ThirdPage extends StatelessWidget {
                                         fit: BoxFit.cover,
                                         width: 150,
                                       )),
-                                  //Positioned(
-                                      top: 20,
-                                      left: 1,
-                                      child: Container(
-                                        height: 10,
-                                        width: 10,
-                                        color: Colors.white,
-                                        child: Center(
-                                          child: Text(GroceryCollection[index]['name']),
-                                        ),
-                                      ))
                                 ],
                               )),
                           Expanded(
