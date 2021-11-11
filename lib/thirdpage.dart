@@ -21,7 +21,6 @@ class ThirdPage extends StatelessWidget {
                       margin: EdgeInsets.all(10),
                       height: 150,
                       width: 180.0,
-                      color: Colors.amber,
                       child: Column(
                         children: [
                           Expanded(
