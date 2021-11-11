@@ -102,15 +102,6 @@ class ThirdPage extends StatelessWidget {
                                     fit: BoxFit.cover,
                                     width: 150,
                                   ))),
-                          Expanded(
-                            flex: 2,
-                            child: Center(
-                              child: Text(
-                                vegetables[index]['name'],
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                          )
                         ],
                       ),
                     ),
