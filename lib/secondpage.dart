@@ -10,7 +10,7 @@ class SecondPage extends StatefulWidget {
 }
 
 class _State extends State<SecondPage> {
-  int selectedpage = 1; //initial value
+  int selectedpage = 0; //initial value
   final _pageOptions = [
     ThirdPage(),
     FirstPage(),
