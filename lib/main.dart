@@ -62,7 +62,7 @@ class _State extends State<FirstPage> {
                       labelText: 'Search Student'),
                   onChanged: (value) => searchData(value),
                 ),
-                Container(
+                /*Container(
                     height: 500,
                     width: double.infinity,
                     child: copyUsers.isNotEmpty
@@ -126,7 +126,7 @@ class _State extends State<FirstPage> {
                             },
                           )
                         : Image.network(
-                            "https://pictures.dealer.com/a/alanjayautomotivenetwork/0193/dfdcaf5815f36d2398fb372b2f294a73x.jpg?impolicy=downsize&w=568"))
+                            "https://pictures.dealer.com/a/alanjayautomotivenetwork/0193/dfdcaf5815f36d2398fb372b2f294a73x.jpg?impolicy=downsize&w=568"))*/
               ],
             ),
           ),
