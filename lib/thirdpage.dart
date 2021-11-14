@@ -25,13 +25,6 @@ class ThirdPage extends StatelessWidget {
                         style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold, letterSpacing: 3),
                       ),
                     ),
-                    Expanded(
-                      flex: 2,
-                      child: Text(
-                        'See All: ',
-                        style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold, letterSpacing: 3),
-                      ),
-                    )
                   ],
                 )),
             Container(
