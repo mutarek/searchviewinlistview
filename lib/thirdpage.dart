@@ -22,7 +22,7 @@ class ThirdPage extends StatelessWidget {
               ),
             ),
             Container(
-              height: 400,
+              height: 200,
               width: double.infinity,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
@@ -120,7 +120,7 @@ class ThirdPage extends StatelessWidget {
               ),
             ),
             Container(
-              height: 200,
+              height: 400,
               width: double.infinity,
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
