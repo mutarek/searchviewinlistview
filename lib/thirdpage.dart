@@ -124,7 +124,6 @@ class ThirdPage extends StatelessWidget {
               width: double.infinity,
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-                scrollDirection: Axis.horizontal,
                 itemCount: vegetables.length,
                 itemBuilder: (ctx, index) {
                   return GestureDetector(
