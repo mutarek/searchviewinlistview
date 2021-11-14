@@ -120,37 +120,94 @@ class ThirdPage extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.all(10),
-              height: 400,
+              height: 200,
               width: double.infinity,
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-                itemCount: GroceryCollection.length,
-                itemBuilder: (contezt, index) {
-                  return Card(
-                    elevation: 5,
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
-                    child: Container(
-                      height: 130,
-                      width: 150,
-                      child: Column(
-                        children: [
-                          Expanded(
+                scrollDirection: Axis.horizontal,
+                itemCount: vegetables.length,
+                itemBuilder: (ctx, index) {
+                  return GestureDetector(
+                    child: Card(
+                      elevation: 5,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                      child: Container(
+                        height: 150,
+                        width: 150,
+                        child: Column(
+                          children: [
+                            Expanded(
                               flex: 4,
-                              child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(10),
-                                  child: Image.network(
-                                    GroceryCollection[index]['picture'],
-                                    fit: BoxFit.cover,
-                                    width: 150,
-                                  ))),
-                        ],
+                              child: Stack(
+                                children: [
+                                  ClipRRect(
+                                      borderRadius: BorderRadius.circular(10),
+                                      child: Image.network(
+                                        vegetables[index]['picture'],
+                                        fit: BoxFit.cover,
+                                        width: double.infinity,
+                                        height: 150,
+                                      )),
+                                  Positioned(
+                                    top: 1,
+                                    left: 1,
+                                    child: Container(
+                                      height: 30,
+                                      width: 50,
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.only(topLeft: Radius.circular(10)), color: Colors.blue),
+                                      child: Center(
+                                        child: Text(
+                                          vegetables[index]['price'].toString(),
+                                          style: TextStyle(decoration: TextDecoration.lineThrough, color: Colors.white),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    top: 1,
+                                    right: 1,
+                                    child: Container(
+                                      height: 30,
+                                      width: 50,
+                                      decoration: BoxDecoration(borderRadius: BorderRadius.only(topRight: Radius.circular(10)), color: Colors.amber),
+                                      child: Center(
+                                        child: Text(
+                                          vegetables[index]['price'].toString(),
+                                          style: TextStyle(color: Colors.white),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Expanded(
+                              flex: 2,
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    flex: 2,
+                                    child: Center(
+                                      child: Text(vegetables[index]['name']),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    flex: 1,
+                                    child: Center(
+                                      child: Icon(Icons.shopping_cart),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   );
                 },
               ),
-            )
+            ),
           ],
         ),
       ),
