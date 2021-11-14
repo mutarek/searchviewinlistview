@@ -12,15 +12,28 @@ class ThirdPage extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.all(4),
-              padding: EdgeInsets.all(5),
-              height: 60,
-              width: double.infinity,
-              child: Text(
-                'Take a look of our some fresh vegetables ',
-                style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold, letterSpacing: 3),
-              ),
-            ),
+                margin: EdgeInsets.all(4),
+                padding: EdgeInsets.all(5),
+                height: 60,
+                width: double.infinity,
+                child: Row(
+                  children: [
+                    Expanded(
+                      flex: 3,
+                      child: Text(
+                        'Take a look of our some fresh vegetables ',
+                        style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold, letterSpacing: 3),
+                      ),
+                    ),
+                    Expanded(
+                      flex: 2,
+                      child: Text(
+                        'See All: ',
+                        style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold, letterSpacing: 3),
+                      ),
+                    )
+                  ],
+                )),
             Container(
               height: 200,
               width: double.infinity,
