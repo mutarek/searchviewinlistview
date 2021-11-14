@@ -199,7 +199,11 @@ class ThirdPage extends StatelessWidget {
                                   Expanded(
                                     flex: 1,
                                     child: Center(
-                                      child: Image.asset('assets/addtocart.png'),
+                                      child: Image.asset(
+                                        'assets/addtocart.png',
+                                        height: 50,
+                                        width: 50,
+                                      ),
                                     ),
                                   ),
                                 ],
