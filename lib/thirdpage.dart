@@ -199,7 +199,7 @@ class ThirdPage extends StatelessWidget {
                                   Expanded(
                                     flex: 1,
                                     child: Center(
-                                      child: Icon(Icons.favorite_border_outlined),
+                                      child: Icon(Icons.redeem_outlined),
                                     ),
                                   ),
                                 ],
