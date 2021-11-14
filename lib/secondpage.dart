@@ -12,8 +12,8 @@ class SecondPage extends StatefulWidget {
 class _State extends State<SecondPage> {
   int selectedpage = 1; //initial value
   final _pageOptions = [
-    FirstPage(),
     ThirdPage(),
+    FirstPage(),
     FirstPage()
   ];
   @override
